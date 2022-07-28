@@ -238,37 +238,100 @@ const test = () => {
   // console.log(search);
   // document.getElementById('number').innerHTML = search;
 
-  let num1 =6.2;
-  let num2 =6.3;
+//   let num1 ="aa1.2xc";
+//   let num2 =5;
 
-  dat1 = isNaN(num1);
-  dat2 = isNaN(num2);
+//   dat1 = isNaN(num1);
+//   dat2 = isNaN(num2);
 
-  console.log(dat1, dat2);
-  let newNum = "";
-  let newNum1 = "";
-  let result = "";
-  if (dat1 || dat2) {
-    if (dat1) 
-    {
-      newNum = num1.replace(/[^1-9]/g, "");
-      result = Number(newNum) + Number(num2);
-      console.log(result);
-    }
+//   console.log(dat1, dat2);
+//   let newNum = "";
+//   let newNum1 = "";
+//   let result = "";
+//   if (dat1 || dat2) {
+//     if (dat1) 
+//     {
+//       newNum = num1.replace(/[^1-9,.]/g, "");
+//       result = Number(newNum) + Number(num2);
+//       console.log(result);
+//     }
      
-    else 
-    {
-      newNum1 = num2.replace(/[^1-9]/g, "");
-      result = Number(num1) + Number(newNum1);
-      console.log(result);
-    }
- } 
+//     else 
+//     {
+//       newNum1 = num2.replace(/[^1-9]/g, "");
+//       result = Number(num1) + Number(newNum1);
+//       console.log(result);
+//     }
+//  } 
     
-    else 
-    {
-    let a = Number(num1);
-    let b = Number(num2);
-    result = a + b;
-    console.log(result);
-  }
+//     else 
+//     {
+//     let a = Number(num1);
+//     let b = Number(num2);
+//     result = a + b;
+//     console.log(result);
+//   }
+
+// #Hoisting means ==> it`s a default behaviour of JS its moving declaration to top
+
+// x = 10;
+// var x = '';
+// console.log(x);
+
+// const normal = () => {
+
+//     document.getElementById('p1').innerHTML += this;
+//     console.log('hao')
+// }
+
+
+// // function normal() {
+// //       
+// //     ;
+// // }
+
+// // window.addEventListener('load',normal)
+// document.getElementById('btn').addEventListener('click',normal);
+
+
+// let data = 'Task 1';
+// let he1 = document.createElement('h1');
+// he1.innerText = data;
+// document.body.append(he1);
+
+// he1.style.backgroundColor= 'lightpink'
+
+
+
+
+
 };
+
+
+// const key = (e) => {
+//   console.log('Moving');
+//   document.getElementById('click').style.backgroundColor = 'red';
+// }
+
+// const leave = () => {
+//   document.getElementById('click').style.backgroundColor = 'blue ';
+// }
+
+const cl = () => {
+  console.log('dbl Clicked');
+ 
+}
+
+// console.log('45');
+const mov = () => {
+  console.log('Moving');
+}
+
+document.getElementById('box').addEventListener("mousemove",mov)
+const open = () => {
+  window.open('','','width=400,height=200')
+
+}
+
+document.getElementById('open').addEventListener('click',open )
+
