@@ -187,29 +187,34 @@ let person = { name :'Mari',
 
 // to get keys 
 
-let key = Object.keys(person);
-console.log(key);
+// let key = Object.keys(person);
+// console.log(key);
 
-let value  = Object.values(person);
-console.log(value);
+// let value  = Object.values(person);
+// console.log(value);
 
-let result = Object.entries(person);
-console.log(result);
+// let result = Object.entries(person);
+// console.log(result);
 
-person.mobile  = 123456;
-console.log(person);
+// person.mobile  = 123456;
+// console.log(person);
 
-// this medthod ==> Object.preventExtensions() can`t add new properties(key:pair) value to Obejct
+// // this medthod ==> Object.preventExtensions() can`t add new properties(key:pair) value to Obejct but can modify data
 
-Object.preventExtensions(person);
-person.address = 'Pathai';
-console.log(person);
-person.age = 26;
-console.log(person);
+// // Object.preventExtensions(person);
+// // person.address = 'Pathai';
+// // console.log(person);
+// // person.age = 26;
+// console.log(person);
 
-//this nethod ==> Object.freeze(person); can`t change exisitig data in object    
+// //this nethod ==> Object.freeze(person); can`t add new properties(key:pair) and can`t modify data
+// // Object.freeze(person);
+// // person.age = 24;
+// console.log(person);
 
-Object.freeze(person);
-person.age = 24;
-console.log(person);
+// // this method ==> Object.seal() can`t add and delete data but we can modify the data; 
+// Object.seal(person);
+
+// person.mobile = 987654;
+// console.log(person);
 }
